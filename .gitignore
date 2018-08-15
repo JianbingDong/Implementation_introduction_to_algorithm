@@ -3,11 +3,11 @@
 */*/Debug/
 */*/ipch/
 */*/*.sln
-*/*/*.VC
+*/*/*.VC.db
 */*/*.VC.VC.opendb
 */*/*.vcxproj
 */*/*.vcxproj.filters
-*/*/*/Readme.txt
+*/*/Readme.txt
 */*/stdafx.cpp
 */*/stdafx.h
-*/*/targetvet.h
+*/*/targetver.h
