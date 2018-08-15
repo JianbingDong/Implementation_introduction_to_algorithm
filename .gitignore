@@ -1,13 +1,13 @@
 #c plus plus
-*/.vs/
-*/Debug/
-*/ipch/
-*.sln
-*.VC
-*.VC.VC.opendb
-*.vcxproj
-*.vcxproj.filters
-*/Readme.txt
-stdafx.cpp
-stdafx.h
-targetvet.h
+*/*/.vs/
+*/*/Debug/
+*/*/ipch/
+*/*/*.sln
+*/*/*.VC
+*/*/*.VC.VC.opendb
+*/*/*.vcxproj
+*/*/*.vcxproj.filters
+*/*/*/Readme.txt
+*/*/stdafx.cpp
+*/*/stdafx.h
+*/*/targetvet.h
