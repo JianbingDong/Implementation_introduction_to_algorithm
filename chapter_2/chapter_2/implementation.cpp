@@ -7,6 +7,10 @@ void Insetion_sort(int *A, int len)
 	从第二个数开始取出，依次与左边的数进行比较，若满足条件，则将左边的数右移，
 	最后再插入取出的数。
 	*/
+	/*
+	param A: the array needed to be sorted.
+	param len: integer, the length of the array.
+	*/
 	int key = 0;
 	int i = 0;
 	for (int j = 1; j < len; j++)
@@ -27,6 +31,12 @@ void Insetion_sort(int *A, int len)
 
 void merge(int *A, int p, int q, int r)
 {
+	/*
+	param A: the array needed to be sorted.
+	param p: integer, the begin index of the left subarray.
+	param q: integer, the end index of the left subarray.
+	param r: integer, the end index of the right subarray.
+	*/
 	int n1 = q - p + 1;
 	int n2 = r - q;
 	
@@ -49,7 +59,7 @@ void merge(int *A, int p, int q, int r)
 
 	for (int k = p; k <= r; k++)
 	{
-		if (L[i] <= R[j])
+		if (L[i] >= R[j])
 		{
 			A[k] = L[i];
 			i++;
@@ -67,6 +77,11 @@ void merge(int *A, int p, int q, int r)
 
 void merge_sort(int *A, int p, int r)
 {
+	/*
+	param A: the array needed to be sorted.
+	param p: integer, the begin index of the subarray.
+	param r: integer, the end index of the subarray.
+	*/
 	if (p >= r)
 	{
 		return;
