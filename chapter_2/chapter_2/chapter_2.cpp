@@ -4,18 +4,27 @@
 #include "stdafx.h"
 #include <iostream>
 
-#include "insertion_sort.h"
+#include "implementation.h"
 
+
+void print_arr(int *in, int len);
 int main()
 {
 	int A[5] = { 5,2,4,6,1 };
-	Insetion_sort(A, 5);
 
-	for (int i = 0; i < 5; i++)
-	{
-		printf("%d ", A[i]);
-	}
+	merge_sort(A, 0, 4);
+	
+	print_arr(A, 5);
 
     return 0;
 }
 
+
+void print_arr(int *in, int len)
+{
+	for (int i = 0; i < len; i++)
+	{
+		printf("%d\n", in[i]);
+	}
+
+}
