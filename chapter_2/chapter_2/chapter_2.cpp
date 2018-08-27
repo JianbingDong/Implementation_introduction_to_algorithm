@@ -6,8 +6,8 @@
 
 #include "implementation.h"
 
-
 void print_arr(int *in, int len);
+
 int main()
 {
 	int A[5] = { 5,2,4,6,1 };
@@ -22,9 +22,11 @@ int main()
 
 void print_arr(int *in, int len)
 {
+	printf("the sorted array is:\n");
 	for (int i = 0; i < len; i++)
 	{
-		printf("%d\n", in[i]);
+		printf("%d ", in[i]);
 	}
+	printf("\n");
 
 }

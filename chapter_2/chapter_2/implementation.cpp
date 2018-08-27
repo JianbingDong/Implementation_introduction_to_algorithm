@@ -59,7 +59,7 @@ void merge(int *A, int p, int q, int r)
 
 	for (int k = p; k <= r; k++)
 	{
-		if (L[i] >= R[j])
+		if (L[i] <= R[j])
 		{
 			A[k] = L[i];
 			i++;
@@ -93,4 +93,27 @@ void merge_sort(int *A, int p, int r)
 		merge_sort(A, q + 1, r);
 		merge(A, p, q, r);
 	}
+}
+
+
+void bubble_sort(int *A, int length)
+{
+	/*
+	param A: the array needed to be sorted.
+	param length: integer, the length of the array.
+	*/
+	for (int i = 0; i < length - 1; i++)
+	{
+		for (int j = length - 1; j >= i + 1; j--)
+		{
+			if (A[j] < A[j - 1])
+			{
+				int temp = 0;
+				temp = A[j];
+				A[j] = A[j - 1];
+				A[j - 1] = temp;
+			}
+		}
+	}
+
 }
